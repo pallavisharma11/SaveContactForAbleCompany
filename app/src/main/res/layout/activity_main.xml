@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#f7f7f7"
+    android:padding="10dp"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:id="@+id/personImg"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:background="#c0c0c0"
+        android:padding="10dp"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="5dp"
+        android:src="@drawable/ic_baseline_person_24"/>
+    <EditText
+        android:id="@+id/firstName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/personImg"
+        android:background="#fff"
+        android:hint="First Name"
+        android:padding="10dp"
+        android:layout_margin="5dp"
+        android:inputType="textPersonName"
+        android:textColor="#000"
+        android:textColorHint="#c5c5c5"/>
+    <EditText
+        android:id="@+id/lastName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/firstName"
+        android:background="#fff"
+        android:hint="last Name"
+        android:padding="10dp"
+        android:layout_margin="5dp"
+        android:inputType="textPersonName"
+        android:textColor="#000"
+        android:textColorHint="#c5c5c5"/>
+
+    <EditText
+        android:id="@+id/MobilePhone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/lastName"
+        android:background="#fff"
+        android:hint="Phone Number(Mobile)"
+        android:layout_margin="5dp"
+        android:padding="10dp"
+        android:inputType="phone"
+        android:textColor="#000"
+        android:textColorHint="#c5c5c5"/>
+
+    <EditText
+        android:id="@+id/Email"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/MobilePhone"
+        android:background="#fff"
+        android:hint="Email"
+        android:padding="10dp"
+        android:inputType="textEmailAddress"
+        android:textColor="#000"
+        android:layout_margin="5dp"
+        android:textColorHint="#c5c5c5"/>
+
+    <EditText
+        android:id="@+id/Address"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/Email"
+        android:background="#fff"
+        android:hint="Address"
+        android:padding="10dp"
+        android:inputType="textPostalAddress"
+        android:textColor="#000"
+        android:layout_margin="5dp"
+        android:textColorHint="#c5c5c5"/>
+    
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/saveFab"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:src="@drawable/ic_baseline_done_24"/>
+
+</RelativeLayout>
